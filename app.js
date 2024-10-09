@@ -7,14 +7,16 @@ app.get("/", (req, res) => {
     res.send("Hello from Azure!");
 });
 
-app.get("/azure/get", (req, res) => {
+app.get("/azure", (req, res) => {
     res.send("GET from Azure!");
 });
 
-app.post("/azure/post", (req, res) => {
+app.post("/azure", (req, res) => {
     res.send("POST from Azure!");
 });
 
-app.listen(process.env.PORT || 3000, () => {
-    console.log("Server is running on port " + (process.env.PORT || 3000));
+var port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+    console.log("Server is running on port " + port);
 });
