@@ -7,6 +7,6 @@ app.get("/", (req, res) => {
     res.send("Hello, World");
 });
 
-app.listen(process.env.PORT || 8443, () => {
-    console.log("Server is running on port " + (process.env.PORT || 8443));
+app.listen(process.env.PORT || 80, () => {
+    console.log("Server is running on port " + (process.env.PORT || 80));
 });
