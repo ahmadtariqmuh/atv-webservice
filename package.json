@@ -1,0 +1,15 @@
+{
+  "name": "azure_atv_expressjs_webservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mssql": "^11.0.1"
+  }
+}
