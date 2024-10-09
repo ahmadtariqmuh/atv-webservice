@@ -4,10 +4,17 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("Hello, World");
+    res.send("Hello from Azure!");
+});
+
+app.get("/azure/get", (req, res) => {
+    res.send("GET from Azure!");
+});
+
+app.post("/azure/post", (req, res) => {
+    res.send("POST from Azure!");
 });
 
 app.listen(process.env.PORT || 80, () => {
-    console.log(process.env.PORT);
     console.log("Server is running on port " + (process.env.PORT || 80));
 });
